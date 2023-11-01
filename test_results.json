@@ -1,0 +1,139 @@
+{
+  "id": "Criterion v2.3.3",
+  "passed": 15,
+  "failed": 5,
+  "errored": 0,
+  "skipped": 0,
+  "test_suites": [
+    {
+      "name": "base_suite",
+      "passed": 15,
+      "failed": 5,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "strglen_number_str",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strglen_full_str",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strglen_basic",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgLen_empty_str",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgInterleave_empty",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgInterleave_diff_lengths",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgInterleave_basic",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgDiff_same_strings",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgDiff_empty",
+          "assertions": 1,
+          "status": "FAILED",
+          "messages": [
+            "tests/unit_tests.c:98: Expected: 0, Actual: -1"
+          ]
+        },
+        {
+          "name": "strgDiff_diff_strings",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgCopy_empty",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgCopy_complex",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgCopy_basic",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgChangeCase_empty",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgChangeCase_complex",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "strgChangeCase_basic",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "encrypt_full_msg_numbers",
+          "assertions": 2,
+          "status": "FAILED",
+          "messages": [
+            "tests/unit_tests.c:146: Return value was 3, but it should have been 6.",
+            "tests/unit_tests.c:145: ciphertext was:          Dtf220",
+            "  but it should have been: Dtf331__EOM__"
+          ]
+        },
+        {
+          "name": "encrypt_full_msg",
+          "assertions": 2,
+          "status": "FAILED",
+          "messages": [
+            "tests/unit_tests.c:136: ciphertext was:          Tztufn Gvoebnfoubmt",
+            "  but it should have been: Tztufn Gvoebnfoubmt__EOM__"
+          ]
+        },
+        {
+          "name": "decrypt_full_msg_numbers",
+          "assertions": 2,
+          "status": "FAILED",
+          "messages": [
+            "tests/unit_tests.c:165: ciphertext was:          ûse331__ùìï__",
+            "  but it should have been: Cse220"
+          ]
+        },
+        {
+          "name": "decrypt_full_msg",
+          "assertions": 2,
+          "status": "FAILED",
+          "messages": [
+            "tests/unit_tests.c:157: Return value was 21, but it should have been 18.",
+            "tests/unit_tests.c:156: ciphertext was:          éystem õundamentals__ùìï",
+            "  but it should have been: System Fundamentals"
+          ]
+        }
+      ]
+    }
+  ]
+}
